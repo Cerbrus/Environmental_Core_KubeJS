@@ -6,7 +6,7 @@ events.listen('recipes', event => {
         const i = recipe[0];
         const result = recipe[1];
         const nbt = recipe[2];
-        const merge_nbt = recipe[3];
+        const merge_nbt = recipe[3]; // Not sure what this did in the source recipes? Copy energy? If so, that's the penalty for migrating this to shaped crafting!
 
         event.shaped(Item.of(result, nbt), [
             ` ${key('T', i)} `,
